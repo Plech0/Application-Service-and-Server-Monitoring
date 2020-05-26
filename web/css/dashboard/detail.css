@@ -1,0 +1,79 @@
+iframe {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.glyphicon-trash {
+    color: darkred;
+}
+
+.glyphicon-eye-open {
+    color: green;
+}
+
+.graph-wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.graph-settings {
+    margin-bottom: 24px;
+}
+
+.graph-settings input {
+    width: 50px;
+    border: 1px solid lightgray;
+    padding: 0;
+    border-radius: 4px;
+}
+
+#messages .error .warning {
+    background-color: #ff8d00bf;
+}
+
+#messages .error .error {
+    background-color: #ff4040ba;
+}
+
+#messages .error span {
+    padding: 4px;
+}
+
+#messages tr,
+#messages th,
+#messages td {
+    background-color: transparent;
+}
+
+#messages .table {
+    border: 1px solid lightgray;
+}
+
+#messages .err-level {
+    margin-left: 16px;
+}
+
+#messages .table td,
+#messages .table th {
+    border-right: 1px solid lightgray;
+    vertical-align: middle;
+}
+
+#messages .table td:last-child {
+    border-right: 0;
+}
+
+#messages tr.non-active .msg span {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

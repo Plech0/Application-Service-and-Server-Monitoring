@@ -1,0 +1,30 @@
+.form-horizontal .control-label {
+    text-align: left;
+}
+
+.add-graph-btn {
+    margin: 16px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-new-graph img {
+    margin-left: 8px;
+}
+
+#radio-btns {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#radio-btns > div {
+    margin: 0;
+    padding: 0;
+    margin-right: 24px;
+}
+
+#radio-btns .control-label {
+    padding-left: 0;
+    padding-right: 0;
+}

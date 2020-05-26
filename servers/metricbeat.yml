@@ -1,0 +1,29 @@
+metricbeat.modules:
+  - module: system
+    metricsets:
+      - cpu             # CPU usage
+      - memory          # Memory usage
+      - network         # Network IO
+      - diskio         # Disk IO
+      - uptime          # System Uptime
+#      - load            # CPU load averages
+#      - process         # Per process metrics
+#      - process_summary # Process summary
+#      - socket_summary  # Socket summary
+#      - core           # Per CPU core usage
+#      - filesystem     # File system usage for each mountpoint
+#      - fsstat         # File system summary metrics
+#      - raid           # Raid
+#      - socket         # Sockets and connection info (linux only)
+#      - service        # systemd service information
+    enabled: true
+    period: 5s
+    processes: ['.*']
+
+    # Configure the metric types that are included by these metricsets.
+    cpu.metrics:  ["normalized_percentages"]  # The other available options are normalized_percentages and ticks.
+    core.metrics: ["percentages"]  # The other available option is ticks.
+
+
+output.logstash:
+  hosts: ["logstash:5044"]

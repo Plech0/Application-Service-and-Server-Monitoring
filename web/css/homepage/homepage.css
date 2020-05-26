@@ -1,0 +1,27 @@
+.add-dashboard-btn {
+    margin: 16px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-new-dashboard img {
+    margin-left: 8px;
+}
+
+.grid-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-pagination ul {
+    margin: 0;
+}
+
+.glyphicon-trash {
+    color: darkred;
+}
+
+.glyphicon-eye-open {
+    color: green;
+}
